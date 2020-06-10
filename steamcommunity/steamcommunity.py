@@ -223,7 +223,7 @@ class SteamCommunity(commands.Cog):
     @steamcommunity.command(name="status")
     @commands.cooldown(1, 45, commands.BucketType.guild)
     @commands.bot_has_permissions(embed_links=True)
-    async def steamstatus(self, ctx):
+    async def steam(self, ctx):
         """Get status of steam services"""
         async with ctx.typing():
             try:
